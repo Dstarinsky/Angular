@@ -1,0 +1,71 @@
+
+@import
+url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+* {
+  font-family:'Muli', sans-serif; /* Change your font family */
+}
+
+.active-table {
+  border-collapse: collapse;
+  margin: 30px auto;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+}
+
+.active-table thead tr {
+/*   background-color: #009879; */
+  color: black;
+  text-align: center;
+  font-size:16px;
+  border-bottom: 1px solid #f0eeee;
+}
+
+.active-table th,
+.active-table td {
+  padding: 20px;
+  color: #D4ECDD;
+}
+.active-table td:last-of-type{
+  padding-right:40px;
+}
+.active-table td:first-of-type{
+  padding-left: 40px;
+}
+
+.active-table tbody tr {
+  text-align: center;
+  font-size:16px;
+  border-bottom: 1px solid #f0eeee;
+  color: darkslategray;
+  background-color: #fffdfd;
+}
+
+
+.active-table tbody tr:hover {
+  background-color: #f9f9f9;
+  cursor: pointer;
+  
+}
+
+div
+{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.search
+{
+  padding-top: auto;
+  color: #112031;
+}
+table
+{
+  border-style: groove;
+  background-color: #345B63;
+  text-decoration-color: #D4ECDD;
+}

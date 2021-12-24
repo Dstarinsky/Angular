@@ -1,0 +1,43 @@
+<div>
+    <div class="search">
+        <label>Search your country </label>
+        <input (keyup)="filter($event.target)" [value]="index">
+    </div>
+    <div *ngIf="countries && index.length==0">
+        <table class="active-table" border="1">
+            <tr>
+                <th>Name</th>
+                <th>Native Name</th>
+                <th>Capital</th>
+                <th>Population</th>
+                <th>Flag</th>
+            </tr>
+            <tr *ngFor="let c of countries">
+                <td>{{c.name}}</td>
+                <td>{{c.nativeName}}</td>
+                <td>{{c.capital}}</td>
+                <td>{{c.population}}</td>
+                <td><img [src]="c.flag"  width="80px" height="50px"/></td>
+            </tr>
+        </table>
+    </div>
+    <div *ngIf="filteredCountries && filteredCountries.length>0">
+        <table class="active-table" border="1">
+            <tr>
+                <th>Name</th>
+                <th>Native Name</th>
+                <th>Capital</th>
+                <th>Population</th>
+                <th>Flag</th>
+            </tr>
+            <tr *ngFor="let c of filteredCountries">
+                <td>{{c.name}}</td>
+                <td>{{c.nativeName}}</td>
+                <td>{{c.capital}}</td>
+                <td>{{c.population}}</td>
+                <td><img [src]="c.flag" width="80px" height="50px"/></td>
+            </tr>
+        </table>
+    </div>
+    
+</div>
